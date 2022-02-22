@@ -12,9 +12,15 @@ def main():
         #cleans up all the data and then returns an array with all the data
         ip_and_dns = get_dns(clean_up_data(ip_address))
 
-        #prints all the data to the console window
-        for i in ip_and_dns:
-            print(i)     
+        #writes all the data to a txt file
+        create_text_file(ip_and_dns)    
+
+def create_text_file(data):
+    f = open("IP_address_and_DNS.txt", "w+")
+
+    for line in data:
+        f.write("IP: {0:60} DNS: {1}\n".format(str(line[2]), str(line[0])))
+        f.write("\n")
 
 # a function that takes all the data and cleans it up
 def clean_up_data(ip_address):
@@ -34,7 +40,7 @@ def get_dns(ip_address):
             host = socket.gethostbyaddr(str(ip_address[i]))
             list_ip_dns[i] = host
         except:
-            list_ip_dns[i] = f"Sorry we had issues reaching {ip_address[i]} IP address please try pasting it into your browser."
+            list_ip_dns[i] = [None, None, f"Sorry we had issues reaching {ip_address[i]} IP address please try pasting it into your browser."]
 
     return list_ip_dns
 
