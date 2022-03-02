@@ -1,0 +1,18 @@
+IP: ['8.8.8.8']                                                  DNS: dns.google
+
+IP: ['107.23.11.190']                                            DNS: ec2-107-23-11-190.compute-1.amazonaws.com
+
+IP: ['142.250.217.78']                                           DNS: sea09s29-in-f14.1e100.net
+
+IP: ['142.251.33.69']                                            DNS: sea09s28-in-f5.1e100.net
+
+IP: Sorry we had issues reaching 52.250.42.157 IP address please try pasting it into your browser. DNS: None
+
+IP: ['157.240.3.35']                                             DNS: edge-star-mini-shv-01-sea1.facebook.com
+
+IP: ['216.58.206.238']                                           DNS: par10s34-in-f14.1e100.net
+
+IP: ['66.211.175.229']                                           DNS: ru.ebay.com
+
+IP: ['98.136.144.138']                                           DNS: ats1.l7.search.vip.gq1.yahoo.com
+
